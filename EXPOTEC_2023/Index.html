@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="Estilo.css">
+</head>
+<body>
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Principal')" id="defaultOpen">PRINCIPAL</button>
+        <button class="tablinks" onclick="openTab(event, 'Inscricoes')">INSCRIÇÕES</button>
+        <button class="tablinks" onclick="openTab(event, 'Programacao')">PROGRAMAÇÃO</button>
+    </div>
+    <div id="Principal" class="tabcontent">
+        <div id="header">
+            <img id="logo" src="IMAGENS/logo.1.png" alt="Logo">
+            <div class="caption">Não perca a EXPOTEC 2023, o evento tecnológico do ano que destaca as inovações e avanços em ciência e tecnologia, abraçando a diversidade humana e promovendo a sustentabilidade.</div>
+    </div>
+</div>
+
+    </div>
+
+    <div id="Inscricoes" class="tabcontent">
+        <h3>Faça sua inscrição aqui!!!</h3>
+        <p>Preencha o formulário o envie e corre para o abraço!</p>
+        <form action="/action_page.php">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome..." required>
+        
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Seu email..." required>
+        
+            <label for="matricula">Matrícula:</label>
+            <input type="text" id="matricula" name="matricula" placeholder="Sua matrícula..." required>
+        
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" name="sexo">
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outro">Outro</option>
+            </select>
+        
+            <label for="sala">Sala:</label>
+            <input type="text" id="sala" name="sala" placeholder="Sua sala..." required>
+        
+            <label for="turma">Turma:</label>
+            <input type="text" id="turma" name="turma" placeholder="Sua turma..." required>
+        
+            <label for="curso">Curso:</label>
+            <input type="text" id="curso" name="curso" placeholder="Seu curso..." required>
+        
+            <label for="turno">Turno:</label>
+            <input type="text" id="turno" name="turno" placeholder="Seu turno..." required>
+        
+            <input type="submit" value="Enviar">
+        </form>
+        <div id="header">
+            <img id="logo" src="IMAGENS/img.2.png" alt="Logo">
+        </div>
+    </div>
+    <div id="Programacao" class="tabcontent">
+    <h3>Programação</h3>
+    <p>Sua programação do evento, agenda e detalhes vão aqui!</p>
+
+    <table>
+     <tr>
+        <th>Dia 1</th>
+        <th>Dia 2</th>
+        <th>Dia 3</th>
+        </tr>
+    <tr>
+        <td>8:00 - Abertura<br>9:00 - Palestra<br>9:30 - Sala Tematica <br> 10:30 - Workshop<br>11:00 - apresentção <br>11:30 - Discussão</td>
+        <td>8:00 - Sala Tematica<br>9:00 - Palestra<br>9:30 - Sala Tematica <br> 10:30 - Workshop<br>11:00 - apresentção <br>11:30 - Discussão</td>
+        <td>8:00 - Palestra<br>9:00 - Palestra<br>9:30 - Sala Tematica <br> 10:30 - Workshop<br>11:00 - apresentção <br>11:30 - Discussão</td>
+    </tr>
+    <tr>
+        <th>12:00 - Almoço</td>
+        <th>12:00 - Almoço</td>
+        <th>12:00 - Almoço</td>
+    </tr>
+    <tr>
+        <td>14:00 - Sala Tematica<br>14:30 - Palestra<br>15:00 - Apresentação <br> 15:30 - Workshop<br>16:00 - Apresentção <br>16:30 - Discussão<br>17:30 - Apresentações na Praça<br>16:00 - Palestra</td>
+        <td>14:00 - Sala Tematica<br>14:30 - Palestra<br>15:00 - Apresentação <br> 15:30 - Workshop<br>16:00 - Apresentção <br>16:30 - Discussão<br>17:30 - Apresentações na Praça<br>16:00 - Palestra</td>
+        <td>14:00 - Sala Tematica<br>14:30 - Palestra<br>15:00 - Apresentação <br> 15:30 - Workshop<br>16:00 - Apresentção <br>16:30 - Discussão<br>17:30 - Apresentações na Praça<br>16:00 - Palestra<br> 18:00 - Encerramento
+    </tr>
+    <tr>
+        <th>19:00 - Concentração na Praça Arnaldo Bezerra</td>
+    </tr>
+    </table>
+    <div id="header">
+        <img id="logo" src="IMAGENS/img.1.png" alt="Logo">
+    </div>
+    </div>
+    
+    <script>
+        document.getElementById("defaultOpen").click();
+    
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>

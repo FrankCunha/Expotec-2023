@@ -1,0 +1,141 @@
+    
+       .tab {
+        overflow: hidden;
+        background-color: #6A0DAD;
+    }
+    .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 18px 50px;
+        transition: 0.3s;
+        color: white;
+    }
+    .tab button:hover {
+        background-color: #460875;
+    }
+    .tab button.active {
+        background-color: #460875;
+    }
+    .tabcontent {
+        display: none;
+        padding: 20px;
+        background-color: #460875;
+        color: white;
+    }
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #6A0DAD;
+        color: white;
+        font-family: Arial, Agbalumo;
+    }
+    #header {
+        display: flex;
+        text-align: center;
+        ;
+    }
+    #logo {
+        max-width: 1600px;
+        position: relative;
+        margin: auto;
+    }
+    #schedule {
+        margin: 30px auto;
+        width: 50%;
+        text-align: center;
+    }
+
+    .slideshow-container {
+        max-width: 500px;
+        position: relative;
+        margin: auto;
+    }
+
+    .container {
+        width: 60%;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+    .caption {
+        text-align: center;
+        color: #f2f2f2;
+        font-size: 20px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+    }
+    form {
+        font-family: Arial, sans-serif;
+        max-width: 600px;
+        margin: auto;
+    }
+
+    input[type=text], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=submit] {
+        width: 100%;
+        background-color: #6A0DAD;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+        background-color: #460875;
+    }
+    table {
+        font-family: Arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    th {
+        background-color: #6A0DAD;
+        color: white;
+    }
